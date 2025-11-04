@@ -5,6 +5,8 @@ Ce template est destiné à vous aider à la rédaction d'un rapport de troubles
 En effet, l'important, dans l'apprentissage du troubleshooting, est d'appliquer une procédure systématique d'investigation reposant sur la collecte d'indices et sur la mise en avant des liens entre ces indices pour arriver à l'identification du problème.  Un bug n'est pas résolu par la disparition du problème, mais bien par la compréhension profonde de ce qui s'est passé afin d'appliquer les corrections adéquates.
 
 
+
+Pour utiliser ce template, vous pouvez soit "forker" le repository, soit copier/coller le contenu de cette page.  
 ***
 
 
