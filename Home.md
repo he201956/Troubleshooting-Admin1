@@ -9,6 +9,9 @@ En effet, l'important, dans l'apprentissage du troubleshooting, est d'appliquer 
 Pour utiliser ce template, vous pouvez soit "forker" le repository, soit copier/coller le contenu de cette page.  
 ***
 
+- Auteur(s) :  
+- Date : 
+
 
 # 1. Bug Report
 
