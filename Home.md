@@ -59,14 +59,14 @@ Note : Au stade actuel, vous **ne devez toujours pas** aller **examiner les fich
 
 Sur base de vos indices, vous devriez à présent arriver à comprendre le problème.  
 
-1. Décrivez et expliquez, sur base des indices récoltés, une hypothèse expliquant le bug observé. Il doit y avoir un lien clair entre les indices et l'hypothèse.  
+1. Décrivez et expliquez, sur base d'une synthèse des indices récoltés et des conclusions que vous en avez tiré, une hypothèse expliquant le bug observé. Il doit y avoir un lien clair entre les indices et l'hypothèse.  
 
 
 Exemple fictif et non technique :  
    * Mon "bug" est la disparition du chocolat de l'armoire à friandise alors qu'il y avait une tablette complète une heure plus tôt.   
    * J'investigue et récolte un indice : mon fils a du chocolat sur le visage
    * Hypothèse : mon fils a mangé le chocolat.  
-Il y a bien un lien clair entre l'indice observé et l'hypothèse. 
+Ici, le lien entre l'indice observé et l'hypothèse est assez évident. 
 
 
 2. Votre hypothèse devrait vous indiquer une erreur probable dans les configurations.  Allez à présent vérifier dans les fichiers de configuration si elle est correcte.  
