@@ -6,6 +6,8 @@ En effet, l'important, dans l'apprentissage du troubleshooting, est d'appliquer 
 
 
 Pour utiliser ce template, vous pouvez soit "forker" le repository, soit copier/coller le contenu de cette page.  
+
+Un exemple de rapport de troubleshooting est disponible [[ici|Troubleshooting DHCP]]
 ***
 # < Titre du travail >
 
