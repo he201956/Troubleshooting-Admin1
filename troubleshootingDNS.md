@@ -4,7 +4,7 @@
 - Date : 27/11/2025
 - Usage des IAGs : / 
 
-
+- lien version précédente du travail : https://github.com/he201956/Troubleshooting-DNS/blob/2336451a8f2cc18d11000df21a872e8ebbbef926/troubleshootingDNS.md
 ## 1. Bug Report
 
 Il y a un bug lorsque de la machine client 'direction' je réalise un ping vers www.google.com. Effectivement
