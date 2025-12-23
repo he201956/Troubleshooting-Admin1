@@ -39,7 +39,21 @@ Dans ce rapport, pour chaque outil utilisé :
 - Indiquez sur quelle machine (ou lien) vous l'utilisez, et avec quels paramètres 
 - Indiquez quel serait le résultat que vous obtiendriez en situation normale (= _output attendu_)
 - Donnez l'_output obtenu_ (screenshot ou output textuel selon les circonstances)
-- Indiquez ce que vous déduisez de cet output (comparaison output attendu/output obtenu + analyse) 
+- Indiquez ce que vous déduisez de cet output (comparaison output attendu/output obtenu + analyse)
+
+
+
+
+- Je réalise un configtest sur le serveur www et je reçois une erreur.
+  <img width="874" height="344" alt="Capture d&#39;écran 2025-12-23 192640" src="https://github.com/user-attachments/assets/059dda05-b0bf-4151-b715-3bf89f7be4a9" />
+
+- Je réalise un apche2ctl -S mais je constate aussi une erreur.
+  
+<img width="858" height="231" alt="Capture d&#39;écran 2025-12-23 193030" src="https://github.com/user-attachments/assets/abfb1bc8-f92a-4022-88b4-93d3ef9488ec" />
+
+
+  
+
 
 ### Liste des outils :
 
