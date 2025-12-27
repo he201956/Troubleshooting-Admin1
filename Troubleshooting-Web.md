@@ -59,7 +59,7 @@ Dans ce rapport, pour chaque outil utilisé :
 - Sur le serveur, je réalise un apache2ctl -S et je constate que que le virtualhost du blog est bien présent à côté de celui de www.
 <img width="1510" height="591" alt="Capture d&#39;écran 2025-12-24 125408" src="https://github.com/user-attachments/assets/cb05658e-4d2e-43de-ba0e-04721b4d8aa1" />
 
-- Sur le serveur, je réalise un netstat et je constate que les ports 80 et 8000 sont bien en listen pour apache.
+- Sur le serveur, je réalise un netstat et je constate que le blog est sur le port 8000 et le www sur le port 80.
 <img width="1532" height="256" alt="Capture d&#39;écran 2025-12-24 125740" src="https://github.com/user-attachments/assets/feb73354-11cf-4c68-81ce-336572f40eb5" />
 
 - Sur le serveur, je constate que malgré mes requêtes links vers blog.woodytoys.lab il n'y a rien dans les fichiers acces.log et error.log du blog. Mais je constate que toutes mes requêtes se retrouvent dans le fichiers access.log de wwww et rien dans error.log de www.
@@ -111,8 +111,8 @@ Sur base de vos indices, vous devriez à présent arriver à comprendre le probl
 
      
 1. * Mon bug est que depuis les machines clients, lorsque j'essaie de joindre l'adresse blog.woodytoys.lab, j'obtiens le contenu de l'adresse wwww.
-   * Après investiguations je me rends compte qu'il n'y a pas de problèmes de connexions entre les machines clients et le serveur wwww et que sur le serveur wwww tout semble fonctionner normalement.
-   * Hypothèse : je pense qu'il doit y avoir un problème au niveau de la configuration du <Directory> du blog ou du <virtualhost> du blog dans le fichier blog-woodytoys-lab.conf. Et que donc il est impossible de transmettre le fichier index.html du blog, et que le serveur transmet le fichier index.html de www par défault.
+   * Après investiguations je me rends compte qu'il n'y a pas de problèmes de connexions entre les machines clients et le serveur wwww et que sur le serveur wwww tout semble fonctionner normalement sauf le fait que le blog est sur le port 8000.
+   * Hypothèse : je pense qu'il doit y avoir un problème au niveau de la configuration du port du <virtualhost> du blog dans le fichier blog-woodytoys-lab.conf. Et que donc il est impossible de transmettre le fichier index.html du blog, et que le serveur transmet le fichier index.html de www par défault.
 
 
 2. 
