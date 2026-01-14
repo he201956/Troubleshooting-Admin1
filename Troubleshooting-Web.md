@@ -55,7 +55,7 @@ Comme outils j'ai utilisé :
 - netstat
 - dig
 - ping
-- les logs des services wwww et blog
+- les logs des services www et blog
 - apache2ctl -S
 - apache2ctl configtest
 
