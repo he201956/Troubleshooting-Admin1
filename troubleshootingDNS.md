@@ -7,17 +7,16 @@
 - lien version précédente du travail : https://github.com/he201956/Troubleshooting-DNS/blob/2336451a8f2cc18d11000df21a872e8ebbbef926/troubleshootingDNS.md
 ## 1. Bug Report
 
-Il y a un bug lorsque de la machine client 'direction' je réalise un ping vers www.google.com. Effectivement
-je reçois le message suivant:
+Il y a un bug lorsque je réalise un ping depuis la machine client 'direction' vers www.google.com. Effectivement, je reçois le message suivant:
 
 <img width="809" height="576" alt="Capture d&#39;écran 2025-11-27 173637" src="https://github.com/user-attachments/assets/f65209a8-7c10-4ef7-a5f3-4e94c1af9b59" />
 
-Alors que si le serveur DNS étatit bien configuré, la requête ping devrait fonctionner.
+Alors que si le serveur DNS était bien configuré, la requête ping devrait fonctionner.
 
 
 ## 2. Collecte des symptômes
 
-En regardant la trace wireshark de cette échange je constate bien qu'il y a un refus du resolver lors de la requête dns du client 'direction'.
+En regardant la trace wireshark de cet échange, je constate qu'il y a un refus du resolver lors de la requête DNS du client 'direction'.
 
 <img width="1853" height="899" alt="Capture d&#39;écran 2025-11-27 174112" src="https://github.com/user-attachments/assets/fdc70e26-b64b-4602-97a3-f5d4ce474f10" />
 
@@ -27,7 +26,7 @@ En regardant la trace wireshark de cette échange je constate bien qu'il y a un 
 
 
 
-Effectivement quand je réalise un dig depuis la machine client 'direction' vers l'adresse ip du resolver (192.168.0.2), je me rend compte que je reçois un refus.
+Effectivement, quand je réalise un dig depuis la machine client 'direction' vers l'adresse ip du resolver (192.168.0.2), je me rends compte que je reçois un refus.
 
 
 
@@ -39,7 +38,7 @@ Effectivement quand je réalise un dig depuis la machine client 'direction' vers
 
 ### Liste des outils :
 
-Comme outils j'ai utilisé wireshark, dig et ping.
+J'ai utilisé comme outils wireshark, dig et ping.
 
 ## 3. Identification et description du problème 
 
@@ -55,7 +54,7 @@ Sur base de mes indices, je pense que le problème vient du fichier named du res
  
 <img width="1205" height="737" alt="Capture d&#39;écran 2025-11-27 175306" src="https://github.com/user-attachments/assets/9ce7e06e-025e-42c1-bdb7-8eea8cdb21af" />
 
-- Je constate qu'il y a bien une erreur au niveau du allow-recursion, effectivement l'ip du network est 192.168.0.0/24 et ici il est indiqué 192.168.1.0/24.
+- Je constate qu'il y a bien une erreur au niveau du allow-recursion. L'ip du network est 192.168.0.0/24 et ici il est indiqué 192.168.1.0/24.
 
   
 <img width="1389" height="839" alt="Capture d&#39;écran 2025-12-23 175420" src="https://github.com/user-attachments/assets/bfeb5961-2dc2-4341-93d0-f2d73149997e" />
@@ -65,7 +64,7 @@ Sur base de mes indices, je pense que le problème vient du fichier named du res
   
 <img width="639" height="320" alt="Capture d&#39;écran 2025-12-23 175543" src="https://github.com/user-attachments/assets/ce079390-f5c8-42cf-8944-d3109303214b" />
 
-- Ensuite je réalise un reload afin de relancer le serveur et de pouvoir tester si la modification a résolu le problème.
+- Ensuite, je réalise un reload afin de relancer le serveur et de pouvoir tester si la modification a résolu le problème.
 
 
   
