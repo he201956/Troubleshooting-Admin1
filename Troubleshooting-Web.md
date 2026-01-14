@@ -41,7 +41,7 @@
 <img width="1587" height="599" alt="Capture d&#39;écran 2025-12-27 131503" src="https://github.com/user-attachments/assets/fd75e8dd-e6de-496a-8617-594e94c8d161" />
 
 
-- Sur le serveur, je constate que malgré mes requêtes links vers blog.woodytoys.lab il n'y a rien dans les fichiers acces.log et error.log du blog. Mais je constate que toutes mes requêtes se retrouvent dans le fichiers access.log de wwww et rien dans error.log de www.
+- Sur le serveur, je constate que malgré mes requêtes links vers blog.woodytoys.lab il n'y a rien dans les fichiers acces.log et error.log du blog. Mais je constate que toutes mes requêtes se retrouvent dans le fichiers access.log de www et rien dans error.log de www.
 <img width="1804" height="141" alt="Capture d&#39;écran 2025-12-24 130523" src="https://github.com/user-attachments/assets/f7920312-b5ec-4121-975d-39f1992b5870" />
 
 
@@ -77,7 +77,7 @@ Comme outils j'ai utilisé :
 - Je décide donc de modifier le port du VirtualHost de blog-woodytoys-lab.conf qui est 8000 en 80.
   <img width="1813" height="884" alt="Capture d&#39;écran 2025-12-27 124154" src="https://github.com/user-attachments/assets/2ded0f61-4712-4844-83f8-801ffc5ddc99" />
 
-- Je vérifie que le VirtualHost de blog-woodytoys-lab.conf est bien assigné au port 80 comme celui de www. Ensuite je vérifie si tout est ok au niveau syntax avec apache2ctl configtest et je restart apache.
+- Je vérifie que le VirtualHost de blog-woodytoys-lab.conf est bien assigné au port 80 comme celui de www. Ensuite, je vérifie si tout est ok au niveau syntax avec apache2ctl configtest et je restart apache.
   <img width="1709" height="705" alt="Capture d&#39;écran 2025-12-27 123538" src="https://github.com/user-attachments/assets/24f0a27b-4b3c-4fd0-8aed-2a5adbc226d4" />
 
 - Pour finir, je réalise ma requête links http://blog.woodytoys.lab/ depuis la machine client 'directeur' et je constate que la requête fonctionne après cette modification.
